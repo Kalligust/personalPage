@@ -1,0 +1,50 @@
+$color_1: rgb(255, 228, 196);
+$color_2: rgb(250, 169, 190);
+$hover_color: rgb(235, 208, 176);
+
+.header {
+  font-family: Goudy Old Style;
+  background-color: $color_1;
+  text-align: center;
+
+  .page-title {
+    height: 6rem;
+    background-color: $color_2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    h1 {
+      font-size: 4rem;
+      // font-family: Goudy Old Style;
+      margin: 0;
+      // text-decoration: overline;
+      border-top: 3px solid black;
+      border-bottom: 3px solid black;
+    }
+  }
+
+  nav {
+    height: 6rem;
+    // margin: 0 2rem;
+
+    ul {
+      height: 100%;
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      margin: 0;
+      .activity {
+        font-size: 2rem;
+        flex-grow: 1;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+          background-color: $hover_color;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

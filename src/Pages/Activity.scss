@@ -1,0 +1,28 @@
+.activity-main {
+  height: 100rem;
+}
+
+.activity-section {
+  height: 100%;
+  display: flex;
+}
+
+.activity-info {
+  height: 100%;
+  background-color: rgb(250, 169, 190);
+  // flex-grow: 1;
+  width: 30%;
+  position: relative;
+  transform: rotate(-10deg);
+  z-index: -1;
+  top: -5rem;
+}
+
+.activity-img {
+  height: 100%;
+  width: 70%;
+  // flex-grow: 1;
+  background-image: url("../../public/bgIMG.jpg");
+  background-position: center;
+  z-index: -2;
+}
