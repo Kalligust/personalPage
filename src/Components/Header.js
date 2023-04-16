@@ -1,3 +1,6 @@
+import { NavLink } from "react-router-dom";
+import CostumNavLinkButton from "./CostumNavLinkButton";
+
 import "./Header.scss";
 
 const Header = () => {
@@ -8,11 +11,25 @@ const Header = () => {
       </div>
       <nav>
         <ul>
-          <li className="activity">Activity 1</li>
-          <li className="activity">Activity 2</li>
-          <li className="activity">Activity 3</li>
-          <li className="activity">Activity 4</li>
-          <li className="activity">Activity 5</li>
+          <li className="activity">
+            <CostumNavLinkButton url="/act" name="bleble" />
+          </li>
+          <li className="activity">
+            <CostumNavLinkButton url={"/2"} name="bloodibla" />
+          </li>
+          <li className="activity">
+            <CostumNavLinkButton url={"/3"} name="barakooda" />
+          </li>
+          <li className="activity">
+            <CostumNavLinkButton url={"/4"} name="loopidabi" />
+          </li>
+
+          <li className="activity">
+            <CostumNavLinkButton url={"/5"} name="babbaraa" />
+          </li>
+          <li className="activity">
+            <CostumNavLinkButton url={"/6"} name="nablebood" />
+          </li>
         </ul>
       </nav>
     </header>
