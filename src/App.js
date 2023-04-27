@@ -10,9 +10,24 @@ function App() {
     <div className="App">
       <Header />
       <Switch>
-            <Route path="/act">
-              <Activity />
-            </Route>
+        <Route path="/1">
+          <Activity side={"left"} />
+        </Route>
+        <Route path="/2">
+          <Activity side={"right"} />
+        </Route>
+        <Route path="/3">
+          <Activity side={"left"} />
+        </Route>
+        <Route path="/4">
+          <Activity side={"right"} />
+        </Route>
+        <Route path="/5">
+          <Activity side={"left"} />
+        </Route>
+        <Route path="/6">
+          <Activity side={"right"} />
+        </Route>
       </Switch>
     </div>
   );
